@@ -29,3 +29,11 @@ The instances are generated from the same feasibility model used in the paper:
 satellite-target visibility, observation angles, task durations, priority
 values, memory demand, energy budget, and original-plan indicators are included
 for rescheduling experiments.
+
+For the manuscript, an original-plan task is identified by
+`original_scheduled=True`. All remaining tasks in the released rescheduling
+pool are treated as emergency candidate tasks at the decision epoch. The
+per-setting `manifest.json` files therefore include paper-level fields named
+`paper_num_original_plan_tasks`, `paper_num_emergency_candidates`, and
+`paper_emergency_candidate_ratio`. These are the fields that correspond to the
+paper definition of the high-concurrency emergency setting.

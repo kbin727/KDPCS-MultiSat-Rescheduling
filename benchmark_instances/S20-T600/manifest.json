@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "created": 0,
-  "skipped": 180,
+  "created": 10,
+  "skipped": 0,
   "requested": 10,
   "seconds": 1.002096176147461,
   "args": {
@@ -16,9 +16,6 @@
     "max_sats": null,
     "min_tasks": null,
     "max_tasks": null,
-    "emergency_ratio": 0.25,
-    "min_emergency_ratio": 0.15,
-    "max_emergency_ratio": 0.35,
     "t0_frac": 0.0,
     "memory_capacity": 120.0,
     "energy_capacity": 50000.0,
@@ -26,14 +23,177 @@
     "data_rate": 0.5,
     "duration_scale": 1.0,
     "task_selection": "random",
-    "regular_priority_min": 1.0,
-    "regular_priority_max": 10.0,
-    "emergency_priority_min": 5.0,
-    "emergency_priority_max": 10.0,
     "seed": 2026070521,
     "variants_per_source": 1,
     "source_ids": null,
-    "overwrite": true
+    "overwrite": true,
+    "paper_emergency_candidate_definition": "tasks with original_scheduled=False in the rescheduling pool"
   },
-  "records": []
+  "records": [
+    {
+      "instance_idx": 0,
+      "num_satellites": 20,
+      "num_tasks": 600,
+      "paper_num_original_plan_tasks": 99,
+      "paper_num_emergency_candidates": 501,
+      "paper_emergency_candidate_ratio": 0.835,
+      "validation": {
+        "original_scheduled": 99,
+        "original_total_priority": 539.7712014955528
+      },
+      "paper_priority_range": [
+        1.0,
+        10.0
+      ]
+    },
+    {
+      "instance_idx": 1,
+      "num_satellites": 20,
+      "num_tasks": 600,
+      "paper_num_original_plan_tasks": 129,
+      "paper_num_emergency_candidates": 471,
+      "paper_emergency_candidate_ratio": 0.785,
+      "validation": {
+        "original_scheduled": 129,
+        "original_total_priority": 742.4816853220225
+      },
+      "paper_priority_range": [
+        1.0,
+        10.0
+      ]
+    },
+    {
+      "instance_idx": 2,
+      "num_satellites": 20,
+      "num_tasks": 600,
+      "paper_num_original_plan_tasks": 104,
+      "paper_num_emergency_candidates": 496,
+      "paper_emergency_candidate_ratio": 0.8266666666666667,
+      "validation": {
+        "original_scheduled": 104,
+        "original_total_priority": 584.5841076834195
+      },
+      "paper_priority_range": [
+        1.0,
+        10.0
+      ]
+    },
+    {
+      "instance_idx": 3,
+      "num_satellites": 20,
+      "num_tasks": 600,
+      "paper_num_original_plan_tasks": 118,
+      "paper_num_emergency_candidates": 482,
+      "paper_emergency_candidate_ratio": 0.8033333333333333,
+      "validation": {
+        "original_scheduled": 118,
+        "original_total_priority": 674.0715129508718
+      },
+      "paper_priority_range": [
+        1.0,
+        10.0
+      ]
+    },
+    {
+      "instance_idx": 4,
+      "num_satellites": 20,
+      "num_tasks": 600,
+      "paper_num_original_plan_tasks": 118,
+      "paper_num_emergency_candidates": 482,
+      "paper_emergency_candidate_ratio": 0.8033333333333333,
+      "validation": {
+        "original_scheduled": 118,
+        "original_total_priority": 685.5039218151844
+      },
+      "paper_priority_range": [
+        1.0,
+        10.0
+      ]
+    },
+    {
+      "instance_idx": 5,
+      "num_satellites": 20,
+      "num_tasks": 600,
+      "paper_num_original_plan_tasks": 113,
+      "paper_num_emergency_candidates": 487,
+      "paper_emergency_candidate_ratio": 0.8116666666666666,
+      "validation": {
+        "original_scheduled": 113,
+        "original_total_priority": 671.1324401037
+      },
+      "paper_priority_range": [
+        1.0,
+        10.0
+      ]
+    },
+    {
+      "instance_idx": 6,
+      "num_satellites": 20,
+      "num_tasks": 600,
+      "paper_num_original_plan_tasks": 95,
+      "paper_num_emergency_candidates": 505,
+      "paper_emergency_candidate_ratio": 0.8416666666666667,
+      "validation": {
+        "original_scheduled": 95,
+        "original_total_priority": 542.4147171778153
+      },
+      "paper_priority_range": [
+        1.0,
+        10.0
+      ]
+    },
+    {
+      "instance_idx": 7,
+      "num_satellites": 20,
+      "num_tasks": 600,
+      "paper_num_original_plan_tasks": 114,
+      "paper_num_emergency_candidates": 486,
+      "paper_emergency_candidate_ratio": 0.81,
+      "validation": {
+        "original_scheduled": 114,
+        "original_total_priority": 604.738166947874
+      },
+      "paper_priority_range": [
+        1.0,
+        10.0
+      ]
+    },
+    {
+      "instance_idx": 8,
+      "num_satellites": 20,
+      "num_tasks": 600,
+      "paper_num_original_plan_tasks": 113,
+      "paper_num_emergency_candidates": 487,
+      "paper_emergency_candidate_ratio": 0.8116666666666666,
+      "validation": {
+        "original_scheduled": 113,
+        "original_total_priority": 619.6150282734477
+      },
+      "paper_priority_range": [
+        1.0,
+        10.0
+      ]
+    },
+    {
+      "instance_idx": 9,
+      "num_satellites": 20,
+      "num_tasks": 600,
+      "paper_num_original_plan_tasks": 87,
+      "paper_num_emergency_candidates": 513,
+      "paper_emergency_candidate_ratio": 0.855,
+      "validation": {
+        "original_scheduled": 87,
+        "original_total_priority": 457.31625453615663
+      },
+      "paper_priority_range": [
+        1.0,
+        10.0
+      ]
+    }
+  ],
+  "paper_task_definition": {
+    "original_plan_task": "task with original_scheduled=True",
+    "emergency_candidate_task": "task with original_scheduled=False in the rescheduling pool",
+    "ratio_field": "paper_emergency_candidate_ratio"
+  }
 }

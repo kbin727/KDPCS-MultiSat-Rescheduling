@@ -29,6 +29,11 @@ parameters.
 ## Important Data Notes
 
 - Objective values and plots in the paper use the final KDPCS policy and the final merged evaluation records.
+- In the manuscript, original-plan tasks are the tasks with `original_scheduled=True`.
+  Emergency candidate tasks are the remaining tasks considered at the rescheduling
+  epoch (`original_scheduled=False`). Under this paper definition, the
+  benchmark emergency-candidate ratio ranges from 0.65 to 0.91 across the 180
+  released instances.
 - Policy-network source code and trained checkpoints are not included in this data release.
 - The converted supervised sample cache is larger than 6 GB and is not tracked by git. If the binary cache is needed, publish it as a separate release asset or regenerate samples from the raw teacher records.
 - Figure-generation scripts are provided under `tools/figure_generation/`; they are included to document how the released figures were produced from the released experiment records.
