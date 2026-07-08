@@ -1,0 +1,7 @@
+{
+  "source": "experimental_records/kdpcs_policy_outputs/kdpcs_policy_outputs_p50.json",
+  "front_records": 180,
+  "points_written": 14492,
+  "methods": [],
+  "csv": "experimental_records/kdpcs_policy_outputs/pareto_fronts/kdpcs_policy_fronts.csv"
+}

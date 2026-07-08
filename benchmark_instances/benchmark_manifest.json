@@ -1,0 +1,182 @@
+﻿[
+    {
+        "benchmark_code":  "S3-T100",
+        "original_folder":  "s3_n100",
+        "scale_group":  "Small",
+        "satellites":  3,
+        "tasks":  100,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  0.24
+    },
+    {
+        "benchmark_code":  "S3-T150",
+        "original_folder":  "s3_n150",
+        "scale_group":  "Small",
+        "satellites":  3,
+        "tasks":  150,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  0.331
+    },
+    {
+        "benchmark_code":  "S3-T200",
+        "original_folder":  "s3_n200",
+        "scale_group":  "Small",
+        "satellites":  3,
+        "tasks":  200,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  0.429
+    },
+    {
+        "benchmark_code":  "S5-T100",
+        "original_folder":  "s5_n100",
+        "scale_group":  "Small",
+        "satellites":  5,
+        "tasks":  100,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  0.261
+    },
+    {
+        "benchmark_code":  "S5-T150",
+        "original_folder":  "s5_n150",
+        "scale_group":  "Small",
+        "satellites":  5,
+        "tasks":  150,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  0.358
+    },
+    {
+        "benchmark_code":  "S5-T200",
+        "original_folder":  "s5_n200",
+        "scale_group":  "Small",
+        "satellites":  5,
+        "tasks":  200,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  0.462
+    },
+    {
+        "benchmark_code":  "S8-T200",
+        "original_folder":  "s8_n200",
+        "scale_group":  "Medium",
+        "satellites":  8,
+        "tasks":  200,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  0.534
+    },
+    {
+        "benchmark_code":  "S8-T300",
+        "original_folder":  "s8_n300",
+        "scale_group":  "Medium",
+        "satellites":  8,
+        "tasks":  300,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  0.766
+    },
+    {
+        "benchmark_code":  "S8-T400",
+        "original_folder":  "s8_n400",
+        "scale_group":  "Medium",
+        "satellites":  8,
+        "tasks":  400,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  1.02
+    },
+    {
+        "benchmark_code":  "S10-T200",
+        "original_folder":  "s10_n200",
+        "scale_group":  "Medium",
+        "satellites":  10,
+        "tasks":  200,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  0.582
+    },
+    {
+        "benchmark_code":  "S10-T300",
+        "original_folder":  "s10_n300",
+        "scale_group":  "Medium",
+        "satellites":  10,
+        "tasks":  300,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  0.846
+    },
+    {
+        "benchmark_code":  "S10-T400",
+        "original_folder":  "s10_n400",
+        "scale_group":  "Medium",
+        "satellites":  10,
+        "tasks":  400,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  1.104
+    },
+    {
+        "benchmark_code":  "S15-T400",
+        "original_folder":  "s15_n400",
+        "scale_group":  "Large",
+        "satellites":  15,
+        "tasks":  400,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  1.352
+    },
+    {
+        "benchmark_code":  "S15-T600",
+        "original_folder":  "s15_n600",
+        "scale_group":  "Large",
+        "satellites":  15,
+        "tasks":  600,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  1.97
+    },
+    {
+        "benchmark_code":  "S15-T800",
+        "original_folder":  "s15_n800",
+        "scale_group":  "Large",
+        "satellites":  15,
+        "tasks":  800,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  2.633
+    },
+    {
+        "benchmark_code":  "S20-T400",
+        "original_folder":  "s20_n400",
+        "scale_group":  "Large",
+        "satellites":  20,
+        "tasks":  400,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  1.423
+    },
+    {
+        "benchmark_code":  "S20-T600",
+        "original_folder":  "s20_n600",
+        "scale_group":  "Large",
+        "satellites":  20,
+        "tasks":  600,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  2.144
+    },
+    {
+        "benchmark_code":  "S20-T800",
+        "original_folder":  "s20_n800",
+        "scale_group":  "Large",
+        "satellites":  20,
+        "tasks":  800,
+        "instances":  10,
+        "files":  11,
+        "size_mb":  2.781
+    }
+]

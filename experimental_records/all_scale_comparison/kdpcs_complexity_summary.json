@@ -1,0 +1,48 @@
+{
+  "summary": [
+    {
+      "group": "Small",
+      "instances": 60,
+      "pearson_r": 0.953293355841295,
+      "r2": 0.908768222291158,
+      "loglog_slope": 0.449614944202136,
+      "cv_time_per_candidate_percent": 35.11918943824106,
+      "mean_time": 0.1574098030726115,
+      "max_time": 0.24203848838806152,
+      "mean_candidate_pairs_million": 0.9663225
+    },
+    {
+      "group": "Medium",
+      "instances": 60,
+      "pearson_r": 0.9872327295147911,
+      "r2": 0.9746284622252247,
+      "loglog_slope": 0.7446469866105193,
+      "cv_time_per_candidate_percent": 10.680103010311944,
+      "mean_time": 0.6245386719703674,
+      "max_time": 0.9610557556152344,
+      "mean_candidate_pairs_million": 9.28265
+    },
+    {
+      "group": "Large",
+      "instances": 60,
+      "pearson_r": 0.9965745757378601,
+      "r2": 0.9931608850070961,
+      "loglog_slope": 0.7555831854619287,
+      "cv_time_per_candidate_percent": 9.52403128300874,
+      "mean_time": 2.6952430248260497,
+      "max_time": 4.178309202194214,
+      "mean_candidate_pairs_million": 63.84373333333333
+    },
+    {
+      "group": "All",
+      "instances": 180,
+      "pearson_r": 0.9955774530298072,
+      "r2": 0.991174464981318,
+      "loglog_slope": 0.6549439508314306,
+      "cv_time_per_candidate_percent": 75.18016783658292,
+      "mean_time": 1.1590638332896763,
+      "max_time": 4.178309202194214,
+      "mean_candidate_pairs_million": 24.697568611111112
+    }
+  ]
+}

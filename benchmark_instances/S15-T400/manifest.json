@@ -1,0 +1,781 @@
+﻿{
+    "version":  1,
+    "created":  9,
+    "skipped":  1,
+    "requested":  10,
+    "seconds":  5.917508602142334,
+    "args":  {
+                 "data_root":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704",
+                 "split":  "paper",
+                 "out_dir":  "results\\official_basilisk_paper_instances_balanced_3scale_v2_additional6_20260705\\s15_n400",
+                 "num_records":  10,
+                 "num_sats":  15,
+                 "num_tasks":  400,
+                 "random_size":  false,
+                 "min_sats":  null,
+                 "max_sats":  null,
+                 "min_tasks":  null,
+                 "max_tasks":  null,
+                 "emergency_ratio":  0.25,
+                 "min_emergency_ratio":  0.15,
+                 "max_emergency_ratio":  0.35,
+                 "t0_frac":  0.0,
+                 "memory_capacity":  120.0,
+                 "energy_capacity":  50000.0,
+                 "resource_mode":  "native",
+                 "data_rate":  0.5,
+                 "duration_scale":  1.0,
+                 "task_selection":  "random",
+                 "regular_priority_min":  1.0,
+                 "regular_priority_max":  10.0,
+                 "emergency_priority_min":  5.0,
+                 "emergency_priority_max":  10.0,
+                 "seed":  2026070419,
+                 "variants_per_source":  1,
+                 "source_ids":  [
+                                    2246,
+                                    2249,
+                                    2259,
+                                    4986,
+                                    5017,
+                                    5025,
+                                    5026,
+                                    5031,
+                                    10409,
+                                    10422
+                                ],
+                 "overwrite":  true
+             },
+    "records":  [
+                    {
+                        "version":  1,
+                        "source":  "AEOSBench trajectories.1 + tasksets",
+                        "source_id":  2246,
+                        "variant":  0,
+                        "split":  "paper",
+                        "num_satellites":  15,
+                        "source_satellite_ids":  [
+                                                     1,
+                                                     7,
+                                                     3,
+                                                     14,
+                                                     6,
+                                                     11,
+                                                     2,
+                                                     13,
+                                                     9,
+                                                     4,
+                                                     12,
+                                                     8,
+                                                     0,
+                                                     10,
+                                                     5
+                                                 ],
+                        "num_tasks":  400,
+                        "num_regular":  321,
+                        "num_emergency":  79,
+                        "emergency_ratio":  0.19693257888152557,
+                        "t0_abs":  0,
+                        "horizon_abs":  3600,
+                        "reschedule_horizon":  3600.0,
+                        "memory_capacity":  120.0,
+                        "energy_capacity":  50000.0,
+                        "resource_mode":  "native",
+                        "regular_priority_range":  [
+                                                       1.0,
+                                                       10.0
+                                                   ],
+                        "emergency_priority_range":  [
+                                                         5.0,
+                                                         10.0
+                                                     ],
+                        "data_rate":  0.5,
+                        "duration_scale":  1.0,
+                        "task_selection":  "random",
+                        "resource_layer":  {
+                                               "native":  [
+                                                              "AEOSBench task release_time/due_time/duration/coordinate/sensor_type",
+                                                              "Basilisk visibility tensor",
+                                                              "Basilisk geometric line-of-sight attitude summary when compact summaries are used",
+                                                              "AEOSBench constellation battery/sensor/reaction-wheel fields when resource_mode=native"
+                                                          ],
+                                               "derived":  [
+                                                               "priority/value sampled for the dynamic rescheduling objective",
+                                                               "regular/emergency split sampled from the online task stream",
+                                                               "optional spatial clustering of selected ground targets",
+                                                               "optional observation-duration scaling before visibility-window filtering",
+                                                               "original plan generated by deterministic greedy replay",
+                                                               "memory/data-size derived from duration_x_data_rate when resource_mode=native"
+                                                           ]
+                                           },
+                        "attitude_source":  "Basilisk ECI line-of-sight local-frame projection averaged over the longest visible run",
+                        "task_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\tasksets\\paper\\02\\02246.json",
+                        "trajectory_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\trajectories.1\\paper\\02\\02246.summary.pth",
+                        "constellation_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\constellations\\paper\\02\\02246.json",
+                        "validation":  {
+                                           "bad_windows":  0,
+                                           "missing_visibility_tasks":  0,
+                                           "original_replay_bad":  0,
+                                           "original_scheduled":  88,
+                                           "original_total_priority":  486.55940567299666
+                                       }
+                    },
+                    {
+                        "version":  1,
+                        "source":  "AEOSBench trajectories.1 + tasksets",
+                        "source_id":  2249,
+                        "variant":  0,
+                        "split":  "paper",
+                        "num_satellites":  15,
+                        "source_satellite_ids":  [
+                                                     8,
+                                                     3,
+                                                     9,
+                                                     1,
+                                                     5,
+                                                     12,
+                                                     4,
+                                                     7,
+                                                     2,
+                                                     10,
+                                                     6,
+                                                     11,
+                                                     14,
+                                                     13,
+                                                     0
+                                                 ],
+                        "num_tasks":  400,
+                        "num_regular":  290,
+                        "num_emergency":  110,
+                        "emergency_ratio":  0.27502748298153384,
+                        "t0_abs":  0,
+                        "horizon_abs":  3600,
+                        "reschedule_horizon":  3600.0,
+                        "memory_capacity":  120.0,
+                        "energy_capacity":  50000.0,
+                        "resource_mode":  "native",
+                        "regular_priority_range":  [
+                                                       1.0,
+                                                       10.0
+                                                   ],
+                        "emergency_priority_range":  [
+                                                         5.0,
+                                                         10.0
+                                                     ],
+                        "data_rate":  0.5,
+                        "duration_scale":  1.0,
+                        "task_selection":  "random",
+                        "resource_layer":  {
+                                               "native":  [
+                                                              "AEOSBench task release_time/due_time/duration/coordinate/sensor_type",
+                                                              "Basilisk visibility tensor",
+                                                              "Basilisk geometric line-of-sight attitude summary when compact summaries are used",
+                                                              "AEOSBench constellation battery/sensor/reaction-wheel fields when resource_mode=native"
+                                                          ],
+                                               "derived":  [
+                                                               "priority/value sampled for the dynamic rescheduling objective",
+                                                               "regular/emergency split sampled from the online task stream",
+                                                               "optional spatial clustering of selected ground targets",
+                                                               "optional observation-duration scaling before visibility-window filtering",
+                                                               "original plan generated by deterministic greedy replay",
+                                                               "memory/data-size derived from duration_x_data_rate when resource_mode=native"
+                                                           ]
+                                           },
+                        "attitude_source":  "Basilisk ECI line-of-sight local-frame projection averaged over the longest visible run",
+                        "task_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\tasksets\\paper\\02\\02249.json",
+                        "trajectory_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\trajectories.1\\paper\\02\\02249.summary.pth",
+                        "constellation_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\constellations\\paper\\02\\02249.json",
+                        "validation":  {
+                                           "bad_windows":  0,
+                                           "missing_visibility_tasks":  0,
+                                           "original_replay_bad":  0,
+                                           "original_scheduled":  96,
+                                           "original_total_priority":  514.5498435015217
+                                       }
+                    },
+                    {
+                        "version":  1,
+                        "source":  "AEOSBench trajectories.1 + tasksets",
+                        "source_id":  2259,
+                        "variant":  0,
+                        "split":  "paper",
+                        "num_satellites":  15,
+                        "source_satellite_ids":  [
+                                                     9,
+                                                     11,
+                                                     13,
+                                                     0,
+                                                     3,
+                                                     10,
+                                                     1,
+                                                     5,
+                                                     12,
+                                                     8,
+                                                     4,
+                                                     6,
+                                                     14,
+                                                     2,
+                                                     7
+                                                 ],
+                        "num_tasks":  400,
+                        "num_regular":  296,
+                        "num_emergency":  104,
+                        "emergency_ratio":  0.25983342068150855,
+                        "t0_abs":  0,
+                        "horizon_abs":  3600,
+                        "reschedule_horizon":  3600.0,
+                        "memory_capacity":  120.0,
+                        "energy_capacity":  50000.0,
+                        "resource_mode":  "native",
+                        "regular_priority_range":  [
+                                                       1.0,
+                                                       10.0
+                                                   ],
+                        "emergency_priority_range":  [
+                                                         5.0,
+                                                         10.0
+                                                     ],
+                        "data_rate":  0.5,
+                        "duration_scale":  1.0,
+                        "task_selection":  "random",
+                        "resource_layer":  {
+                                               "native":  [
+                                                              "AEOSBench task release_time/due_time/duration/coordinate/sensor_type",
+                                                              "Basilisk visibility tensor",
+                                                              "Basilisk geometric line-of-sight attitude summary when compact summaries are used",
+                                                              "AEOSBench constellation battery/sensor/reaction-wheel fields when resource_mode=native"
+                                                          ],
+                                               "derived":  [
+                                                               "priority/value sampled for the dynamic rescheduling objective",
+                                                               "regular/emergency split sampled from the online task stream",
+                                                               "optional spatial clustering of selected ground targets",
+                                                               "optional observation-duration scaling before visibility-window filtering",
+                                                               "original plan generated by deterministic greedy replay",
+                                                               "memory/data-size derived from duration_x_data_rate when resource_mode=native"
+                                                           ]
+                                           },
+                        "attitude_source":  "Basilisk ECI line-of-sight local-frame projection averaged over the longest visible run",
+                        "task_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\tasksets\\paper\\02\\02259.json",
+                        "trajectory_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\trajectories.1\\paper\\02\\02259.summary.pth",
+                        "constellation_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\constellations\\paper\\02\\02259.json",
+                        "validation":  {
+                                           "bad_windows":  0,
+                                           "missing_visibility_tasks":  0,
+                                           "original_replay_bad":  0,
+                                           "original_scheduled":  97,
+                                           "original_total_priority":  526.5013869121809
+                                       }
+                    },
+                    {
+                        "version":  1,
+                        "source":  "AEOSBench trajectories.1 + tasksets",
+                        "source_id":  4986,
+                        "variant":  0,
+                        "split":  "paper",
+                        "num_satellites":  15,
+                        "source_satellite_ids":  [
+                                                     6,
+                                                     10,
+                                                     12,
+                                                     8,
+                                                     7,
+                                                     0,
+                                                     3,
+                                                     11,
+                                                     14,
+                                                     2,
+                                                     13,
+                                                     9,
+                                                     5,
+                                                     4,
+                                                     1
+                                                 ],
+                        "num_tasks":  400,
+                        "num_regular":  264,
+                        "num_emergency":  136,
+                        "emergency_ratio":  0.3410683755755242,
+                        "t0_abs":  0,
+                        "horizon_abs":  3600,
+                        "reschedule_horizon":  3600.0,
+                        "memory_capacity":  120.0,
+                        "energy_capacity":  50000.0,
+                        "resource_mode":  "native",
+                        "regular_priority_range":  [
+                                                       1.0,
+                                                       10.0
+                                                   ],
+                        "emergency_priority_range":  [
+                                                         5.0,
+                                                         10.0
+                                                     ],
+                        "data_rate":  0.5,
+                        "duration_scale":  1.0,
+                        "task_selection":  "random",
+                        "resource_layer":  {
+                                               "native":  [
+                                                              "AEOSBench task release_time/due_time/duration/coordinate/sensor_type",
+                                                              "Basilisk visibility tensor",
+                                                              "Basilisk geometric line-of-sight attitude summary when compact summaries are used",
+                                                              "AEOSBench constellation battery/sensor/reaction-wheel fields when resource_mode=native"
+                                                          ],
+                                               "derived":  [
+                                                               "priority/value sampled for the dynamic rescheduling objective",
+                                                               "regular/emergency split sampled from the online task stream",
+                                                               "optional spatial clustering of selected ground targets",
+                                                               "optional observation-duration scaling before visibility-window filtering",
+                                                               "original plan generated by deterministic greedy replay",
+                                                               "memory/data-size derived from duration_x_data_rate when resource_mode=native"
+                                                           ]
+                                           },
+                        "attitude_source":  "Basilisk ECI line-of-sight local-frame projection averaged over the longest visible run",
+                        "task_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\tasksets\\paper\\04\\04986.json",
+                        "trajectory_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\trajectories.1\\paper\\04\\04986.summary.pth",
+                        "constellation_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\constellations\\paper\\04\\04986.json",
+                        "validation":  {
+                                           "bad_windows":  0,
+                                           "missing_visibility_tasks":  0,
+                                           "original_replay_bad":  0,
+                                           "original_scheduled":  93,
+                                           "original_total_priority":  508.15264804946605
+                                       }
+                    },
+                    {
+                        "version":  1,
+                        "source":  "AEOSBench trajectories.1 + tasksets",
+                        "source_id":  5017,
+                        "variant":  0,
+                        "split":  "paper",
+                        "num_satellites":  15,
+                        "source_satellite_ids":  [
+                                                     10,
+                                                     4,
+                                                     5,
+                                                     12,
+                                                     11,
+                                                     14,
+                                                     9,
+                                                     13,
+                                                     3,
+                                                     0,
+                                                     8,
+                                                     6,
+                                                     7,
+                                                     1,
+                                                     2
+                                                 ],
+                        "num_tasks":  400,
+                        "num_regular":  333,
+                        "num_emergency":  67,
+                        "emergency_ratio":  0.1682482837334438,
+                        "t0_abs":  0,
+                        "horizon_abs":  3600,
+                        "reschedule_horizon":  3600.0,
+                        "memory_capacity":  120.0,
+                        "energy_capacity":  50000.0,
+                        "resource_mode":  "native",
+                        "regular_priority_range":  [
+                                                       1.0,
+                                                       10.0
+                                                   ],
+                        "emergency_priority_range":  [
+                                                         5.0,
+                                                         10.0
+                                                     ],
+                        "data_rate":  0.5,
+                        "duration_scale":  1.0,
+                        "task_selection":  "random",
+                        "resource_layer":  {
+                                               "native":  [
+                                                              "AEOSBench task release_time/due_time/duration/coordinate/sensor_type",
+                                                              "Basilisk visibility tensor",
+                                                              "Basilisk geometric line-of-sight attitude summary when compact summaries are used",
+                                                              "AEOSBench constellation battery/sensor/reaction-wheel fields when resource_mode=native"
+                                                          ],
+                                               "derived":  [
+                                                               "priority/value sampled for the dynamic rescheduling objective",
+                                                               "regular/emergency split sampled from the online task stream",
+                                                               "optional spatial clustering of selected ground targets",
+                                                               "optional observation-duration scaling before visibility-window filtering",
+                                                               "original plan generated by deterministic greedy replay",
+                                                               "memory/data-size derived from duration_x_data_rate when resource_mode=native"
+                                                           ]
+                                           },
+                        "attitude_source":  "Basilisk ECI line-of-sight local-frame projection averaged over the longest visible run",
+                        "task_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\tasksets\\paper\\05\\05017.json",
+                        "trajectory_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\trajectories.1\\paper\\05\\05017.summary.pth",
+                        "constellation_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\constellations\\paper\\05\\05017.json",
+                        "validation":  {
+                                           "bad_windows":  0,
+                                           "missing_visibility_tasks":  0,
+                                           "original_replay_bad":  0,
+                                           "original_scheduled":  96,
+                                           "original_total_priority":  545.4679797903309
+                                       }
+                    },
+                    {
+                        "version":  1,
+                        "source":  "AEOSBench trajectories.1 + tasksets",
+                        "source_id":  5025,
+                        "variant":  0,
+                        "split":  "paper",
+                        "num_satellites":  15,
+                        "source_satellite_ids":  [
+                                                     5,
+                                                     11,
+                                                     0,
+                                                     7,
+                                                     1,
+                                                     12,
+                                                     8,
+                                                     6,
+                                                     3,
+                                                     4,
+                                                     13,
+                                                     14,
+                                                     2,
+                                                     10,
+                                                     9
+                                                 ],
+                        "num_tasks":  400,
+                        "num_regular":  273,
+                        "num_emergency":  127,
+                        "emergency_ratio":  0.3179664303193632,
+                        "t0_abs":  0,
+                        "horizon_abs":  3600,
+                        "reschedule_horizon":  3600.0,
+                        "memory_capacity":  120.0,
+                        "energy_capacity":  50000.0,
+                        "resource_mode":  "native",
+                        "regular_priority_range":  [
+                                                       1.0,
+                                                       10.0
+                                                   ],
+                        "emergency_priority_range":  [
+                                                         5.0,
+                                                         10.0
+                                                     ],
+                        "data_rate":  0.5,
+                        "duration_scale":  1.0,
+                        "task_selection":  "random",
+                        "resource_layer":  {
+                                               "native":  [
+                                                              "AEOSBench task release_time/due_time/duration/coordinate/sensor_type",
+                                                              "Basilisk visibility tensor",
+                                                              "Basilisk geometric line-of-sight attitude summary when compact summaries are used",
+                                                              "AEOSBench constellation battery/sensor/reaction-wheel fields when resource_mode=native"
+                                                          ],
+                                               "derived":  [
+                                                               "priority/value sampled for the dynamic rescheduling objective",
+                                                               "regular/emergency split sampled from the online task stream",
+                                                               "optional spatial clustering of selected ground targets",
+                                                               "optional observation-duration scaling before visibility-window filtering",
+                                                               "original plan generated by deterministic greedy replay",
+                                                               "memory/data-size derived from duration_x_data_rate when resource_mode=native"
+                                                           ]
+                                           },
+                        "attitude_source":  "Basilisk ECI line-of-sight local-frame projection averaged over the longest visible run",
+                        "task_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\tasksets\\paper\\05\\05025.json",
+                        "trajectory_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\trajectories.1\\paper\\05\\05025.summary.pth",
+                        "constellation_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\constellations\\paper\\05\\05025.json",
+                        "validation":  {
+                                           "bad_windows":  0,
+                                           "missing_visibility_tasks":  0,
+                                           "original_replay_bad":  0,
+                                           "original_scheduled":  98,
+                                           "original_total_priority":  520.980008970844
+                                       }
+                    },
+                    {
+                        "version":  1,
+                        "source":  "AEOSBench trajectories.1 + tasksets",
+                        "source_id":  5026,
+                        "variant":  0,
+                        "split":  "paper",
+                        "num_satellites":  15,
+                        "source_satellite_ids":  [
+                                                     1,
+                                                     13,
+                                                     12,
+                                                     2,
+                                                     4,
+                                                     3,
+                                                     10,
+                                                     6,
+                                                     11,
+                                                     9,
+                                                     7,
+                                                     5,
+                                                     8,
+                                                     14,
+                                                     0
+                                                 ],
+                        "num_tasks":  400,
+                        "num_regular":  279,
+                        "num_emergency":  121,
+                        "emergency_ratio":  0.3020237303178277,
+                        "t0_abs":  0,
+                        "horizon_abs":  3600,
+                        "reschedule_horizon":  3600.0,
+                        "memory_capacity":  120.0,
+                        "energy_capacity":  50000.0,
+                        "resource_mode":  "native",
+                        "regular_priority_range":  [
+                                                       1.0,
+                                                       10.0
+                                                   ],
+                        "emergency_priority_range":  [
+                                                         5.0,
+                                                         10.0
+                                                     ],
+                        "data_rate":  0.5,
+                        "duration_scale":  1.0,
+                        "task_selection":  "random",
+                        "resource_layer":  {
+                                               "native":  [
+                                                              "AEOSBench task release_time/due_time/duration/coordinate/sensor_type",
+                                                              "Basilisk visibility tensor",
+                                                              "Basilisk geometric line-of-sight attitude summary when compact summaries are used",
+                                                              "AEOSBench constellation battery/sensor/reaction-wheel fields when resource_mode=native"
+                                                          ],
+                                               "derived":  [
+                                                               "priority/value sampled for the dynamic rescheduling objective",
+                                                               "regular/emergency split sampled from the online task stream",
+                                                               "optional spatial clustering of selected ground targets",
+                                                               "optional observation-duration scaling before visibility-window filtering",
+                                                               "original plan generated by deterministic greedy replay",
+                                                               "memory/data-size derived from duration_x_data_rate when resource_mode=native"
+                                                           ]
+                                           },
+                        "attitude_source":  "Basilisk ECI line-of-sight local-frame projection averaged over the longest visible run",
+                        "task_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\tasksets\\paper\\05\\05026.json",
+                        "trajectory_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\trajectories.1\\paper\\05\\05026.summary.pth",
+                        "constellation_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\constellations\\paper\\05\\05026.json",
+                        "validation":  {
+                                           "bad_windows":  0,
+                                           "missing_visibility_tasks":  0,
+                                           "original_replay_bad":  0,
+                                           "original_scheduled":  97,
+                                           "original_total_priority":  535.7418674247789
+                                       }
+                    },
+                    {
+                        "version":  1,
+                        "source":  "AEOSBench trajectories.1 + tasksets",
+                        "source_id":  5031,
+                        "variant":  0,
+                        "split":  "paper",
+                        "num_satellites":  15,
+                        "source_satellite_ids":  [
+                                                     4,
+                                                     12,
+                                                     11,
+                                                     8,
+                                                     5,
+                                                     1,
+                                                     6,
+                                                     13,
+                                                     0,
+                                                     3,
+                                                     10,
+                                                     14,
+                                                     2,
+                                                     7,
+                                                     9
+                                                 ],
+                        "num_tasks":  400,
+                        "num_regular":  334,
+                        "num_emergency":  66,
+                        "emergency_ratio":  0.16595626443872,
+                        "t0_abs":  0,
+                        "horizon_abs":  3600,
+                        "reschedule_horizon":  3600.0,
+                        "memory_capacity":  120.0,
+                        "energy_capacity":  50000.0,
+                        "resource_mode":  "native",
+                        "regular_priority_range":  [
+                                                       1.0,
+                                                       10.0
+                                                   ],
+                        "emergency_priority_range":  [
+                                                         5.0,
+                                                         10.0
+                                                     ],
+                        "data_rate":  0.5,
+                        "duration_scale":  1.0,
+                        "task_selection":  "random",
+                        "resource_layer":  {
+                                               "native":  [
+                                                              "AEOSBench task release_time/due_time/duration/coordinate/sensor_type",
+                                                              "Basilisk visibility tensor",
+                                                              "Basilisk geometric line-of-sight attitude summary when compact summaries are used",
+                                                              "AEOSBench constellation battery/sensor/reaction-wheel fields when resource_mode=native"
+                                                          ],
+                                               "derived":  [
+                                                               "priority/value sampled for the dynamic rescheduling objective",
+                                                               "regular/emergency split sampled from the online task stream",
+                                                               "optional spatial clustering of selected ground targets",
+                                                               "optional observation-duration scaling before visibility-window filtering",
+                                                               "original plan generated by deterministic greedy replay",
+                                                               "memory/data-size derived from duration_x_data_rate when resource_mode=native"
+                                                           ]
+                                           },
+                        "attitude_source":  "Basilisk ECI line-of-sight local-frame projection averaged over the longest visible run",
+                        "task_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\tasksets\\paper\\05\\05031.json",
+                        "trajectory_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\trajectories.1\\paper\\05\\05031.summary.pth",
+                        "constellation_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\constellations\\paper\\05\\05031.json",
+                        "validation":  {
+                                           "bad_windows":  0,
+                                           "missing_visibility_tasks":  0,
+                                           "original_replay_bad":  0,
+                                           "original_scheduled":  97,
+                                           "original_total_priority":  546.8936906310519
+                                       }
+                    },
+                    {
+                        "version":  1,
+                        "source":  "AEOSBench trajectories.1 + tasksets",
+                        "source_id":  10422,
+                        "variant":  0,
+                        "split":  "paper",
+                        "num_satellites":  15,
+                        "source_satellite_ids":  [
+                                                     9,
+                                                     5,
+                                                     6,
+                                                     11,
+                                                     7,
+                                                     14,
+                                                     3,
+                                                     13,
+                                                     12,
+                                                     0,
+                                                     10,
+                                                     8,
+                                                     1,
+                                                     4,
+                                                     2
+                                                 ],
+                        "num_tasks":  400,
+                        "num_regular":  308,
+                        "num_emergency":  92,
+                        "emergency_ratio":  0.22947822146684485,
+                        "t0_abs":  0,
+                        "horizon_abs":  3600,
+                        "reschedule_horizon":  3600.0,
+                        "memory_capacity":  120.0,
+                        "energy_capacity":  50000.0,
+                        "resource_mode":  "native",
+                        "regular_priority_range":  [
+                                                       1.0,
+                                                       10.0
+                                                   ],
+                        "emergency_priority_range":  [
+                                                         5.0,
+                                                         10.0
+                                                     ],
+                        "data_rate":  0.5,
+                        "duration_scale":  1.0,
+                        "task_selection":  "random",
+                        "resource_layer":  {
+                                               "native":  [
+                                                              "AEOSBench task release_time/due_time/duration/coordinate/sensor_type",
+                                                              "Basilisk visibility tensor",
+                                                              "Basilisk geometric line-of-sight attitude summary when compact summaries are used",
+                                                              "AEOSBench constellation battery/sensor/reaction-wheel fields when resource_mode=native"
+                                                          ],
+                                               "derived":  [
+                                                               "priority/value sampled for the dynamic rescheduling objective",
+                                                               "regular/emergency split sampled from the online task stream",
+                                                               "optional spatial clustering of selected ground targets",
+                                                               "optional observation-duration scaling before visibility-window filtering",
+                                                               "original plan generated by deterministic greedy replay",
+                                                               "memory/data-size derived from duration_x_data_rate when resource_mode=native"
+                                                           ]
+                                           },
+                        "attitude_source":  "Basilisk ECI line-of-sight local-frame projection averaged over the longest visible run",
+                        "task_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\tasksets\\paper\\10\\10422.json",
+                        "trajectory_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\trajectories.1\\paper\\10\\10422.summary.pth",
+                        "constellation_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\constellations\\paper\\10\\10422.json",
+                        "validation":  {
+                                           "bad_windows":  0,
+                                           "missing_visibility_tasks":  0,
+                                           "original_replay_bad":  0,
+                                           "original_scheduled":  94,
+                                           "original_total_priority":  496.9965882217066
+                                       }
+                    },
+                    {
+                        "version":  1,
+                        "source":  "AEOSBench trajectories.1 + tasksets",
+                        "source_id":  5042,
+                        "variant":  0,
+                        "split":  "paper",
+                        "num_satellites":  15,
+                        "source_satellite_ids":  [
+                                                     8,
+                                                     1,
+                                                     4,
+                                                     11,
+                                                     6,
+                                                     9,
+                                                     7,
+                                                     14,
+                                                     13,
+                                                     12,
+                                                     3,
+                                                     0,
+                                                     2,
+                                                     10,
+                                                     5
+                                                 ],
+                        "num_tasks":  400,
+                        "num_regular":  337,
+                        "num_emergency":  63,
+                        "emergency_ratio":  0.15672676077145178,
+                        "t0_abs":  0,
+                        "horizon_abs":  3600,
+                        "reschedule_horizon":  3600.0,
+                        "memory_capacity":  120.0,
+                        "energy_capacity":  50000.0,
+                        "resource_mode":  "native",
+                        "regular_priority_range":  [
+                                                       1.0,
+                                                       10.0
+                                                   ],
+                        "emergency_priority_range":  [
+                                                         5.0,
+                                                         10.0
+                                                     ],
+                        "data_rate":  0.5,
+                        "duration_scale":  1.0,
+                        "task_selection":  "random",
+                        "resource_layer":  {
+                                               "native":  [
+                                                              "AEOSBench task release_time/due_time/duration/coordinate/sensor_type",
+                                                              "Basilisk visibility tensor",
+                                                              "Basilisk geometric line-of-sight attitude summary when compact summaries are used",
+                                                              "AEOSBench constellation battery/sensor/reaction-wheel fields when resource_mode=native"
+                                                          ],
+                                               "derived":  [
+                                                               "priority/value sampled for the dynamic rescheduling objective",
+                                                               "regular/emergency split sampled from the online task stream",
+                                                               "optional spatial clustering of selected ground targets",
+                                                               "optional observation-duration scaling before visibility-window filtering",
+                                                               "original plan generated by deterministic greedy replay",
+                                                               "memory/data-size derived from duration_x_data_rate when resource_mode=native"
+                                                           ]
+                                           },
+                        "attitude_source":  "Basilisk ECI line-of-sight local-frame projection averaged over the longest visible run",
+                        "task_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\tasksets\\paper\\05\\05042.json",
+                        "trajectory_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\trajectories.1\\paper\\05\\05042.summary.pth",
+                        "constellation_path":  "results\\official_basilisk_scale_visibility_balanced_3scale_v2_10seed_20260704\\constellations\\paper\\05\\05042.json",
+                        "validation":  {
+                                           "bad_windows":  0,
+                                           "missing_visibility_tasks":  0,
+                                           "original_replay_bad":  0,
+                                           "original_scheduled":  94,
+                                           "original_total_priority":  479.4332538492569
+                                       }
+                    }
+                ]
+}

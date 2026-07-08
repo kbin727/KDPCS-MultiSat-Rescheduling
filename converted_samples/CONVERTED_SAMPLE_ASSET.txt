@@ -1,0 +1,10 @@
+Final converted supervised sample cache included in this directory:
+
+  mo_vector_steps_split600_train590_keepdup_p50.pt
+
+  Size: 6,315,734,448 bytes.
+
+The cache was generated from the final 590-record training split with 50
+preference directions. Use Git LFS or a release/data-asset workflow if uploading
+this directory to GitHub. The raw teacher split in ../teacher_split_p50 can
+regenerate the supervised samples with the archived conversion script.

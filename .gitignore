@@ -1,0 +1,10 @@
+converted_samples/*.pt
+converted_samples/*.jsonl
+*.tar
+*.zip
+*.7z
+*.7z.*
+*.part*
+__pycache__/
+*.tmp
+*.log

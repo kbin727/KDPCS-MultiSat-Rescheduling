@@ -1,0 +1,230 @@
+{
+  "records": 30,
+  "num_prefs": 50,
+  "seed": 20260702,
+  "exclude_manifest": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\manifest.json",
+  "raw_dirs": [
+    "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local",
+    "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_server\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_server"
+  ],
+  "counters": {
+    "files": 742,
+    "used_split": 600,
+    "complete_holdout": 86,
+    "duplicate": 600,
+    "partial": 55,
+    "corrupt": 1
+  },
+  "holdout": [
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_356.pkl",
+      "instance_hash": "cb42d942b7267f2a69a21f1662b6f9cc7c2ab35df7f4a065b5094ae68c9904d3",
+      "inst_idx": 356,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0000.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_340.pkl",
+      "instance_hash": "9708d00d77a3de41289ed4a5b17afae35448e3d424c6bdd990b585dc7e61e7c6",
+      "inst_idx": 340,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0001.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_server\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_server\\inst_350.pkl",
+      "instance_hash": "49e7d7894eda85bccad7e02d689e5cdab66ed1bda4e4743637490c731946f487",
+      "inst_idx": 350,
+      "instance_seed": 399,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0002.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_server\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_server\\inst_332.pkl",
+      "instance_hash": "2f72f0527d3027ad8aa3dd7d15d528ad3c9d0c5fdb184b8609d428852a7868be",
+      "inst_idx": 332,
+      "instance_seed": 399,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0003.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_357.pkl",
+      "instance_hash": "b2552ad962f421b663cd45d7c8f50ef11824a0d6158918d12416b4b96f84f2e4",
+      "inst_idx": 357,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0004.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_384.pkl",
+      "instance_hash": "94e30f854afa9e64af95e78d9db931a9aeb6f97c0b36788a307e70185911b608",
+      "inst_idx": 384,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0005.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_172.pkl",
+      "instance_hash": "0adca73a568602ef4c5d581e589e197a76cfb82e9d1afd650164d479a5ab38f7",
+      "inst_idx": 172,
+      "instance_seed": 16,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0006.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_383.pkl",
+      "instance_hash": "76a853f5ea665b2b773fe68f7e873a9ec6ab5877c07bc9e0502bc2419f581f40",
+      "inst_idx": 383,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0007.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_366.pkl",
+      "instance_hash": "9b9fd938b60a4a36d01fbeb264242e57039125d0c5b98f4c198628bb800d2388",
+      "inst_idx": 366,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0008.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_46.pkl",
+      "instance_hash": "c41f5f786d2c3a1927990747895c694d2887923fa2a0b60a573f69730ff82565",
+      "inst_idx": 46,
+      "instance_seed": 16,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0009.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_349.pkl",
+      "instance_hash": "1bfe321c461730fd5d8e6a0ae38db4508d68cf2c8fe330cec4fb58da950c56b2",
+      "inst_idx": 349,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0010.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_334.pkl",
+      "instance_hash": "bd9a13b906af46da5b4be4ebcf2ca1532d51619416e967034f278e9db92f1286",
+      "inst_idx": 334,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0011.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_344.pkl",
+      "instance_hash": "ee0adb044e73d2e8ac7942bafe80c8fc2f3a4ea967ff4e2fc87366163285a8d0",
+      "inst_idx": 344,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0012.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_191.pkl",
+      "instance_hash": "b0ab7c7bc8022d61302fb88d4b32c89045c9b08036f2215607fe185c7c98defc",
+      "inst_idx": 191,
+      "instance_seed": 16,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0013.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_server\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_server\\inst_192.pkl",
+      "instance_hash": "ace325e32230da16d2f995fa6123456d1656cb1148c5ce77da06602769a53951",
+      "inst_idx": 192,
+      "instance_seed": 358,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0014.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_346.pkl",
+      "instance_hash": "87242d4292ea5e673aaee1eca82c703c41c6a56fd4320768b89cc3d7294bb806",
+      "inst_idx": 346,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0015.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_8.pkl",
+      "instance_hash": "e06fc4d34dead30a9b2918d19f8650a7967463e0ad0ac50595c31e80bb2c2ac0",
+      "inst_idx": 8,
+      "instance_seed": 16,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0016.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_273.pkl",
+      "instance_hash": "229576eb4da9a1ae9df235ca4f56b772e89da60fa88899dd9d44a5b5cfd67e1d",
+      "inst_idx": 273,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0017.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_364.pkl",
+      "instance_hash": "8f434346529459ac909a14a45bf62be727db3b0e62c0cedcde2cf15d73c77906",
+      "inst_idx": 364,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0018.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_358.pkl",
+      "instance_hash": "3be82e231b2af41d1c24e72154418cb756a61ce065f8b2ea86e26347da2415d7",
+      "inst_idx": 358,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0019.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_367.pkl",
+      "instance_hash": "3162d4d7fc7c735f498a56c238a3101104ce49449d2c687c6148731c461f2ba0",
+      "inst_idx": 367,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0020.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_232.pkl",
+      "instance_hash": "55186ed31ca6258a94f5c72e9ee4e6fd83758a4674dd3eb23e43dcb3a23f4c35",
+      "inst_idx": 232,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0021.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_380.pkl",
+      "instance_hash": "a4779198b7a3fb6845e810bc47c86db5d7159a6f5536d36de9d57f3144656b83",
+      "inst_idx": 380,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0022.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_382.pkl",
+      "instance_hash": "1ba62243d4d17c905d47f66cbd338800592a5e45743596c9d08487cf62714de8",
+      "inst_idx": 382,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0023.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_268.pkl",
+      "instance_hash": "b5e7dde73d7169fa8fd7d5940f206057c9a9232f8c574470403fd937bf54a44d",
+      "inst_idx": 268,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0024.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_342.pkl",
+      "instance_hash": "05d393dc5d510d3b5515a6db8caa677e2aff13ef6fc31725ec637a9496861117",
+      "inst_idx": 342,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0025.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_154.pkl",
+      "instance_hash": "2f6f1e334cec3ca76a7946a9e5a93e23cf47483e255d779e5321c8f93ec6074a",
+      "inst_idx": 154,
+      "instance_seed": 16,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0026.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_73.pkl",
+      "instance_hash": "c2b74dfaa48a9009d4c12ba9293afc83dfd666dfb506fe1d1ea9a5b26aad0bc2",
+      "inst_idx": 73,
+      "instance_seed": 16,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0027.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_371.pkl",
+      "instance_hash": "df21138a64dfa67ed166dac752b3e5b58946b323a4b91947808157b63ed692dc",
+      "inst_idx": 371,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0028.pkl"
+    },
+    {
+      "path": "results\\basilisk_geo_instances\\raw_gurobi_shards_random_1-3sat_50-100tasks_p50_900_v1_2machines_local\\inst_374.pkl",
+      "instance_hash": "798119b3b0e2e68c3c9a6eaac50acaf3601d96551f757bc8e697f33ef14ea246",
+      "inst_idx": 374,
+      "instance_seed": 88,
+      "copied_to": "results\\basilisk_geo_instances\\split_600_complete_p50_seed20260701_v1\\test_raw_30\\inst_0029.pkl"
+    }
+  ]
+}
