@@ -5,7 +5,8 @@ analysis figures in the paper.
 
 | Directory | Contents |
 |---|---|
-| `preference_count/` | Preference-count sensitivity over 90 representative benchmark instances. `preference_count_sensitivity_rows.csv` stores instance-level results for `K in {20, 50, 100, 150, 200}`; `preference_count_sensitivity_summary.csv` stores the aggregated values used for the figure. |
+| `preference_count/` | Original preference-count sensitivity records with HV, non-dominated point count, and runtime. |
+| `preference_count_with_igd/` | Final Fig. 8 records over 90 representative benchmark instances. The rows file stores HV retention, IGD to the same-instance `K=200` KDPCS front, runtime, and the corresponding saved fronts for `K in {20, 50, 100, 150, 200}`. |
 | `dense_tradeoff/` | Dense preference-query objective responses for the representative `S5-T150` and `S10-T300` instances. |
 | `gantt_s8_t400_inst9/` | Schedule bars and objective values used for the representative `S8-T400` preference-conditioned Gantt figure. |
 
