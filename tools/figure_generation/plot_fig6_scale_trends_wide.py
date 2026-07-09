@@ -9,6 +9,7 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 from matplotlib import rcParams
 
 
@@ -36,6 +37,14 @@ MARKERS = {
     "spea2": "D",
     "ibea": "v",
     "moead": "P",
+}
+LINESTYLES = {
+    "pcformer": "-",
+    "monp": "--",
+    "nsga2": "-.",
+    "spea2": ":",
+    "ibea": (0, (4, 1.6)),
+    "moead": (0, (2, 1.2)),
 }
 SCALE_ORDER = [
     "s3_n100", "s3_n150", "s3_n200",
@@ -74,7 +83,7 @@ def configure():
 
 def draw_metric(df: pd.DataFrame, metric: str, ylabel: str, out_pdf: Path, log_y: bool = False):
     configure()
-    fig, ax = plt.subplots(figsize=(3.62, 2.18))
+    fig, ax = plt.subplots(figsize=(3.62, 2.02))
     x = list(range(len(SCALE_ORDER)))
     for method in METHOD_ORDER:
         sub = (
@@ -82,17 +91,20 @@ def draw_metric(df: pd.DataFrame, metric: str, ylabel: str, out_pdf: Path, log_y
             .set_index("scale")
             .reindex(SCALE_ORDER)
         )
-        lw = 1.58 if method == "pcformer" else 0.92
-        ms = 3.75 if method == "pcformer" else 3.05
+        lw = 1.25 if method == "pcformer" else 0.74
+        ms = 2.75 if method == "pcformer" else 2.10
         ax.plot(
             x,
             sub[metric].values,
             color=COLORS[method],
             marker=MARKERS[method],
+            linestyle=LINESTYLES[method],
             lw=lw,
             markersize=ms,
             markerfacecolor=COLORS[method] if method == "pcformer" else "white",
-            markeredgewidth=0.82,
+            markeredgewidth=0.64,
+            markevery=3,
+            alpha=0.98 if method == "pcformer" else 0.92,
             label=LABELS[method],
             zorder=6 if method == "pcformer" else 4,
         )
@@ -105,19 +117,32 @@ def draw_metric(df: pd.DataFrame, metric: str, ylabel: str, out_pdf: Path, log_y
     ax.set_ylabel(ylabel, fontsize=7.6, labelpad=1.2)
     if log_y:
         ax.set_yscale("log")
+    handles = []
+    for method in METHOD_ORDER:
+        handles.append(
+            Line2D(
+                [0],
+                [0],
+                color=COLORS[method],
+                linestyle=LINESTYLES[method],
+                lw=1.15 if method == "pcformer" else 0.72,
+                marker=MARKERS[method],
+                markersize=3.0 if method == "pcformer" else 2.35,
+                markerfacecolor=COLORS[method] if method == "pcformer" else "white",
+                markeredgewidth=0.62,
+                label=LABELS[method],
+            )
+        )
     legend = ax.legend(
-        loc="lower left",
-        bbox_to_anchor=(0.0, 1.055, 1.0, 0.075),
-        mode="expand",
+        handles=handles,
+        loc="lower center",
+        bbox_to_anchor=(0.5, 1.035),
         ncol=6,
-        fontsize=4.95,
-        frameon=True,
-        framealpha=0.96,
-        edgecolor="#C9C9C9",
-        handlelength=0.68,
-        columnspacing=0.12,
-        borderpad=0.12,
-        labelspacing=0.08,
+        fontsize=5.3,
+        frameon=False,
+        handlelength=0.95,
+        handletextpad=0.22,
+        columnspacing=0.34,
         borderaxespad=0.0,
     )
     for text in legend.get_texts():
